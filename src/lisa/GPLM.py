@@ -36,8 +36,8 @@ from typing import Any, Callable, Dict, Literal, Optional, Tuple, Union
 import numpy as np
 import scipy.linalg as la
 
-from ann import ANNBackend, make_ann
-from utils import fps_indices, median_eps_from_knn_d2, sqdist_ab
+from .ann import ANNBackend, make_ann
+from .utils import fps_indices, median_eps_from_knn_d2, sqdist_ab
 
 InducingMode = Literal["random_subset", "fps", "kmeans_medoids", "given"]
 MetricSolver = Literal["auto", "chol", "eigh"]
