@@ -1,8 +1,7 @@
 # run_support.py
 import numpy as np
 import matplotlib.pyplot as plt
-
-from metrics import compare_all_fast_with_curves
+from .metrics import compare_all_fast_with_curves
 
 COLORS = {
     "ALSA": "C0",   # blue
