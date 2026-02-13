@@ -6,7 +6,7 @@ from typing import Any, Dict, Optional, Tuple
 
 import numpy as np
 
-from utils import as_contig_f32, sqdist_ab
+from .utils import as_contig_f32, sqdist_ab
 
 
 # -------------------------
