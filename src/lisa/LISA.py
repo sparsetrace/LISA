@@ -56,7 +56,7 @@ except Exception:
 try:
     from .GPLM import GPLM
 except Exception:
-    from GPLM import GPLM
+    from lisa import GPLM
 
 
 # ============================================================
