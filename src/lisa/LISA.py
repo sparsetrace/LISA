@@ -44,20 +44,8 @@ from numpy.lib.stride_tricks import sliding_window_view
 
 from scipy.linalg import cho_factor, cho_solve, solve_triangular
 
-# ------------------------------------------------------------
-# Robust imports (package or flat)
-# ------------------------------------------------------------
-try:
-    # if you're inside a package
-    from .NLSA import NLSA
-except Exception:
-    from NLSA import NLSA
-
-try:
-    from .GPLM import GPLM
-except Exception:
-    from lisa import GPLM
-
+from .NLSA import NLSA
+from .GPLM import GPLM
 
 # ============================================================
 # Small utilities
