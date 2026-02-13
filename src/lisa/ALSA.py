@@ -33,28 +33,8 @@ import numpy as np
 from numpy.lib.stride_tricks import sliding_window_view
 
 
-# ------------------------------------------------------------
-# Imports from your repo (robust fallbacks)
-# ------------------------------------------------------------
-
-# NLSA encoder
-try:
-    from .nlsa_encoder import NLSA  # type: ignore
-except Exception:
-    try:
-        from nlsa_encoder import NLSA  # type: ignore
-    except Exception:
-        # if you named the file NLSA.py and class NLSAEncoder lives there
-        from NLSA import NLSA  # type: ignore
-
-# GPLM decoder
-try:
-    from .gplm import GPLM  # type: ignore
-except Exception:
-    try:
-        from gplm import GPLM  # type: ignore
-    except Exception:
-        from GPLM import GPLM  # type: ignore
+from .NLSA import NLSA  # type: ignore
+from .GPLM import GPLM  # type: ignore
 
 
 Array = np.ndarray
