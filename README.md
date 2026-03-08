@@ -1,5 +1,7 @@
 # LISA
 
+[![arXiv](https://img.shields.io/badge/arXiv-2409.05901-b31b1b.svg)](https://arxiv.org/abs/2602.04906)
+
 how to use:
 ```python
 import os, sys, subprocess as sbp
